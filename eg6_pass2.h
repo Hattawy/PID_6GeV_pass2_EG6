@@ -447,11 +447,7 @@ eg6_pass2::eg6_pass2(TTree *tree) : fChain(0)
       // of trees.
       TChain * chain = new TChain("ch","eg6_pass2");
      
-      chain->Add("/music/clas1/clas/eg6-data/pass2/6GeV/pass2v0/hroot_1e_615*.root/h10_1e");
-      chain->Add("/music/clas1/clas/eg6-data/pass2/6GeV/pass2v0/hroot_1e_616*.root/h10_1e");
-      chain->Add("/music/clas1/clas/eg6-data/pass2/6GeV/pass2v0/hroot_1e_617*.root/h10_1e");
-      chain->Add("/music/clas1/clas/eg6-data/pass2/6GeV/pass2v0/hroot_1e_618*.root/h10_1e");
-      chain->Add("/music/clas1/clas/eg6-data/pass2/6GeV/pass2v0/hroot_1e_619*.root/h10_1e");
+      chain->Add("/cache/clas/eg6/production/pass2/6gev/SKIM/1e/hroot_1e_615*.root/h10_1e");
       tree = chain;
 #endif // SINGLE_TREE
 
